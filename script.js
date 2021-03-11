@@ -23,7 +23,7 @@ dice.classList.add('hidden');
 document.querySelector('.btn--roll').addEventListener('click', function () {
   randomNum = Math.trunc(Math.random() * 6) + 1;
 
-  if (tScore1 <= 20 && tScore0 <= 20) {
+  if (tScore1 <= 100 && tScore0 <= 100) {
     dice.classList.remove('hidden');
     dice.src = `dice-${randomNum}.png`;
     if (player0.classList.contains('player--active')) {
@@ -73,13 +73,13 @@ document.querySelector('.btn--hold').addEventListener('click', function (e) {
     currentScore1.textContent = cScore;
   }
 
-  if (tScore1 >= 20 || tScore0 >= 20) {
+  if (tScore1 >= 100 || tScore0 >= 100) {
     player0.classList.toggle('player--active');
     player1.classList.toggle('player--active');
     dice.classList.add('hidden');
-    if (tScore0 >= 20) {
+    if (tScore0 >= 100) {
       player0.classList.add('player--winner');
-    } else if (tScore1 >= 20) {
+    } else if (tScore1 >= 100) {
       player1.classList.add('player--winner');
     }
   }
@@ -89,7 +89,6 @@ document.querySelector('.btn--new').addEventListener('click', function () {
   player0.classList.remove('player--winner');
   player1.classList.remove('player--winner');
   if (player1.classList.contains('player--active')) {
-    console.log('But');
     player1.classList.remove('player--active');
     player0.classList.add('player--active');
   }
