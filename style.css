@@ -16,7 +16,7 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #ffc400 0%, #00ff1e 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -172,4 +172,20 @@ main {
 
 .btn--new {
   margin-top: 250px;
+}
+
+.myName {
+  position: absolute;
+  left: 190px;
+  top: 25px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+  z-index: 1;
+}
+
+.myName a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: bolder;
 }
