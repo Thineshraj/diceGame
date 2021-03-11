@@ -87,7 +87,7 @@ document.querySelector('.btn--hold').addEventListener('click', function (e) {
 
 document.querySelector('.btn--new').addEventListener('click', function () {
   player0.classList.remove('player--winner');
-  player0.classList.remove('player--winner');
+  player1.classList.remove('player--winner');
   tScore0 = 0;
   tScore1 = 0;
   cScore = 0;
